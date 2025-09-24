@@ -1,6 +1,8 @@
 //Import
 import express from 'express';
 import dotenv from 'dotenv';
+import {globalErr, log} from './middleware/middleware.mjs'
+
 
 //Env Setup
 dotenv.config();
@@ -17,9 +19,8 @@ app.use((req, _res, next) => {
 });
 
 //Global Err Handling
-app.use((err, req, res, next) => {
-    res.json({ msg: `X Error - ${err.message}`});
-});
+app.use(globalErr);
+app.use(log);
 
 //Listener
 app.listen(PORT, () => {
