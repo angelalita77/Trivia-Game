@@ -1,0 +1,24 @@
+{
+  "name": "triviagame",
+  "version": "1.0.0",
+  "description": "-   As a user, I want an account so I track my score over time. -   As a user, I would like to see quetions that show a movie clip and guess that movie. -   As a user, I want to use the platform to learn about new movies and bookmark them. -   As a user, I want to see what categories I've already done or questions I've gotten wrong. -   As a user, I want to unlock (badges) achievments as I use over time. -   As a user, I would like to be able to compete with friends (multiplayer trivia). -   As a user, I want to see what category I am best/worst in my profile so I can improve. -   As a user, I want to invite my friends to get rewards in the game. -   As a user, I would like to be able to spectate.",
+  "main": "server.mjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.mjs",
+    "dev": "nodemon server.mjs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.2",
+    "express": "^5.1.0",
+    "mongodb": "^6.20.0",
+    "mongoose": "^8.18.2"
+  }
+}
